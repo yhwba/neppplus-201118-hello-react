@@ -1,11 +1,12 @@
 // import logo from './spongebob.png';
 import bob from './original.gif';
 import './App.css';
+import Hello from './Hello';
+import Goodnight from './Goodnight';
 
 function App() {
   var logo = "spongebob.png";
   var text ="스폰지 밥입니다.";
-  var number = (167+6841-5665)*1155
   return (
     <div className="App">
       <header className="App-header">
@@ -14,15 +15,9 @@ function App() {
         <p>
           {text} //
         </p>
-        <span className="num">{number}</span>
-        <a
-          className="App-link"
-          href="https://naver.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          아닌데요? 뚱인데요?
-        </a>
+        <Goodnight/>
+        <Hello />
+        
       </header>
     </div>
   );
